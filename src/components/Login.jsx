@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import "../components/Login.css";
 
 function Login() {
     const redirect = useNavigate();
@@ -33,40 +34,50 @@ function Login() {
     }
     return (
         <>
-            <section className='container'>
-                <div className='row'>
-                    <form method='post'>
-                        <h1 className='text-center'>Login Here..</h1>
+            <section className='container' style={{backgroundColor: "#e9ecef"}}>
+            <div className='row'>
+                <div className='col-md-6'>
+                    <img src="Images/login.png" alt="lagin page" width="100%"/>  
+                </div>
+                    <div className='col-md-6'>
+                    <form method='post' className='login_box'>
+                        <h1 className='text-center text-white'>Login</h1>
                         <div className='mb-3'>
-                            Email:<input
+                           <span className='text-white fw-semibold'>Email:</span> 
+                           <input
+                                id='myText'
                                 type="email"
                                 name='email'
                                 className="form-control"
-                                placeholder="Your Email"
+                                placeholder="Enter Your Email"
                                 value={state.email}
                                 onChange={formhandler}
                             />
                         </div>
                         <div className='mb-3'>
-                            Password:<input
+                           <span className='text-white fw-semibold text-warning'>Password:</span> 
+                           <input
+                                id='myText'
                                 type="password"
                                 name='password'
                                 className="form-control"
-                                placeholder="Your Password"
+                                placeholder="Enter Your Password"
                                 value={state.password}
                                 onChange={formhandler}
                             />
                         </div>
-                        <div className='col-12'>
-                            <button className='btn btn-primary' onClick={submitHandler} type='submit'>Login</button>
+                        <div>
+                            <button className='btn_login' onClick={submitHandler} 
+                            type='submit'>Login</button>
                         </div>
 
                     </form>
+                    </div>
+                    
                 </div>
             </section>
         </>
     )
 }
-
 
 export default Login

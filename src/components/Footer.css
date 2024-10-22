@@ -1,0 +1,29 @@
+.foot_logo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.foll {
+    text-align: center;
+    color: orange;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 0px;
+}
+.unord {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.copy_text {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0px;
+    font-weight: 600;
+}
