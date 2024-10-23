@@ -6,7 +6,7 @@ import "../components/Footer.css";
 function Footer() {
   return (
     <>
-      <section className='container-fluid foot bg-dark text-white py-5'>
+      <section className='container-fluid foot bg-dark text-white py-3'>
 
     <div className="foot_logo"> 
       <Link to='/'>

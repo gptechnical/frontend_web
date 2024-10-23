@@ -34,10 +34,12 @@ function Login() {
     }
     return (
         <>
-            <section className='container' style={{backgroundColor: "#e9ecef"}}>
+            <section className='container' style={{paddingTop: "20px", paddingBottom: "20px"}}>
             <div className='row'>
                 <div className='col-md-6'>
-                    <img src="Images/login.png" alt="lagin page" width="100%"/>  
+                    <div className='text-center login_img'>
+                    <img src="Images/login.png" alt="lagin page" width="80%"/>  
+                    </div>
                 </div>
                     <div className='col-md-6'>
                     <form method='post' className='login_box'>

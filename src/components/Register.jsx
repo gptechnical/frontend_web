@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "./Register.css";
 
 function Register() {
     const redirect = useNavigate();
@@ -34,12 +35,15 @@ function Register() {
     }
     return (
         <>
-            <div className='container'>
+            <div className='container' style={{paddingTop: "15px", paddingBottom: "15px"}}>
                 <div className='row'>
-                    <h1 className='text-center'>Register Here..</h1>
-                    <form method='post'>
-                        <div className='col-sm-8 col-md-8 mx-auto'>
-                            Name:<input
+                <div className='col-md-8 mx-auto'>
+                    <form method='post'
+                    className='reg_form'>
+                    <h1 className='text-center text-white'>Register</h1>
+                            <span className='text-white fw-bolder'>Name:</span>
+                            <input
+                                id='myText'
                                 type="text"
                                 name='name'
                                 className="form-control my-2"
@@ -47,23 +51,29 @@ function Register() {
                                 value={state.name}
                                 onChange={handler}
                             />
-                            Email:<input
+                            <span className='text-white fw-bolder'>Email:</span>                           
+                            <input
+                                id='myText'
                                 type="email"
                                 name='email'
                                 className="form-control"
                                 placeholder="Your Email"
                                 value={state.email}
                                 onChange={handler}
-                            />
-                            Mobile:<input
+                            />  
+                            <span className='text-white fw-bolder'>Mobile:</span>  
+                            <input
+                                id='myText'
                                 type="number"
                                 name='mobile'
                                 className="form-control"
                                 placeholder="Your Mobile"
                                 value={state.mobile}
                                 onChange={handler}
-                            />
-                            Address:<input
+                            /> 
+                            <span className='text-white fw-bolder'>Address:</span> 
+                            <input
+                                id='myText'
                                 type="text"
                                 name='address'
                                 className="form-control"
@@ -71,7 +81,9 @@ function Register() {
                                 value={state.address}
                                 onChange={handler}
                             />
-                            Password:<input
+                            <span className='text-white fw-bolder'>Password:</span>
+                            <input
+                                id='myText'
                                 type="password"
                                 name='password'
                                 className="form-control"
@@ -79,7 +91,9 @@ function Register() {
                                 value={state.password}
                                 onChange={handler}
                             />
-                            ConPassword:<input
+                            <span className='text-white fw-bolder'>ConPassword:</span>
+                            <input
+                                id='myText'
                                 type="password"
                                 name='conpassword'
                                 className="form-control"
@@ -87,12 +101,12 @@ function Register() {
                                 value={state.conpassword}
                                 onChange={handler}
                             />
-                            <button className='btn btn-primary' type='button' onClick={registerSubmit}>Register</button>
-                        </div>
-
+                            <button className='btn_regis' type='button' onClick={registerSubmit}>Register</button>
                     </form>
                 </div>
 
+                </div>
+               
             </div>
         </>
     )
