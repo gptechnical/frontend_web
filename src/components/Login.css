@@ -1,6 +1,6 @@
 .login_box {
     background-color: #764BA2;
-    width: 100%;
+    width: 60%;
     position: relative;
     top: 50%;
     left: 50%;
@@ -37,11 +37,32 @@ input[type="password"]::placeholder {
     border: none;
     box-shadow: none;
     color: #000000;
+    position: relative;
+}
+.login_img {
+
+  padding-top: 70px;
+}
+.eye_icon {
+    position: absolute;
+    bottom: 90px;
+    right: 30px;
+}
+@media  (max-width: 768px) {
+    .login_img {
+        display: none;
+    }
+    .login_box {
+        width: 80%;
+    }
 }
 
 @media  (max-width: 425px) {
     .login_img {
         display: none;
+    }
+    .login_box {
+        width: 100%;
     }
 }
 

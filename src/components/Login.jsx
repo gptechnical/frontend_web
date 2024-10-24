@@ -4,6 +4,8 @@ import "../components/Login.css";
 
 function Login() {
     const redirect = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
+
     const [state, setState] = useState({
         email: "",
         password: ""
@@ -32,9 +34,13 @@ function Login() {
             alert("Plz enter correct details")
         }
     }
+
+    const togglePasswordVisibility = () =>{
+        setShowPassword(!showPassword);
+    }
     return (
         <>
-            <section className='container' style={{paddingTop: "20px", paddingBottom: "20px"}}>
+        <section className='container' style={{paddingTop: "20px", paddingBottom: "20px"}}>
             <div className='row'>
                 <div className='col-md-6'>
                     <div className='text-center login_img'>
@@ -53,20 +59,25 @@ function Login() {
                                 className="form-control"
                                 placeholder="Enter Your Email"
                                 value={state.email}
-                                onChange={formhandler}
+                                onChange={formhandler}                              
                             />
                         </div>
                         <div className='mb-3'>
                            <span className='text-white fw-semibold text-warning'>Password:</span> 
                            <input
                                 id='myText'
-                                type="password"
+                                type={showPassword ? 'text' : 'password'}
                                 name='password'
                                 className="form-control"
                                 placeholder="Enter Your Password"
                                 value={state.password}
                                 onChange={formhandler}
+                               
                             />
+                            <span onClick={togglePasswordVisibility} className='eye_icon'>
+                            {showPassword ? <i class="bi bi-eye-slash-fill"></i> : <i class="bi bi-eye-fill"></i>}
+                            </span>
+                           
                         </div>
                         <div>
                             <button className='btn_login' onClick={submitHandler} 

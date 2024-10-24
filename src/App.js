@@ -13,10 +13,13 @@ import "./App.css"
 import Login from './components/Login'
 import 'animate.css'
 import PrivateComponent from './components/PrivateComponent'
+import LoginForm from './components/LoginForm'
+
 
 function App() {
   return (
     <>
+        {/* <LoginForm/> */}
       <BrowserRouter>
         <Nav></Nav>
         <Routes>
