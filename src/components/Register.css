@@ -5,6 +5,7 @@
     width: 50%;
     box-shadow: 2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.41);
     line-height: 2.1;
+    position: relative;
 }
 
 .btn_regis {
@@ -23,6 +24,18 @@ input[type="text"]::placeholder {
 }
 input[type="number"]::placeholder {
     color: #000000;
+}
+
+.eyeIcon {
+    position: absolute;
+    bottom: 150px;
+    right: 30px;
+}
+
+.eyeIcon_Con {
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
 }
 
 @media (max-width: 768px) {

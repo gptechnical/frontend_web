@@ -5,6 +5,8 @@ import "./Register.css";
 
 function Register() {
     const redirect = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
+    const [conPassword, setConPassword] = useState(false);
     const [state, setStateValue] = useState({
         name: "", email: "", mobile: "", address: "", password: "", conpassword: ""
     });
@@ -32,6 +34,12 @@ function Register() {
             name: "", email: "", mobile: "", address: "", password: "", conpassword: ""
         })
         redirect("/login")
+    }
+    const toggleShowPassword = () =>{
+        setShowPassword(!showPassword);
+    }
+    const toggleConPassword = () => {
+        setConPassword(!conPassword);
     }
     return (
         <>
@@ -84,23 +92,29 @@ function Register() {
                             <span className='text-white fw-bolder'>Password:</span>
                             <input
                                 id='myText'
-                                type="password"
+                                type={showPassword ? 'text' : 'password'}
                                 name='password'
                                 className="form-control"
                                 placeholder="Your Password"
                                 value={state.password}
                                 onChange={handler}
                             />
+                            <span onClick={toggleShowPassword} className='eyeIcon'>
+                            {showPassword ? <i class="bi bi-eye-slash-fill"></i> : <i class="bi bi-eye-fill"></i>}
+                            </span>
                             <span className='text-white fw-bolder'>ConPassword:</span>
                             <input
                                 id='myText'
-                                type="password"
+                                type={conPassword ? 'text' : 'password'}
                                 name='conpassword'
                                 className="form-control"
                                 placeholder="Your ConPassword"
                                 value={state.conpassword}
                                 onChange={handler}
                             />
+                            <span onClick={toggleConPassword} className='eyeIcon_Con'>
+                            {conPassword ? <i class="bi bi-eye-slash-fill"></i> : <i class="bi bi-eye-fill"></i>}
+                            </span>
                             <button className='btn_regis' type='button' onClick={registerSubmit}>Register</button>
                     </form>
                 </div>
