@@ -15,13 +15,12 @@ import 'animate.css'
 import PrivateComponent from './components/PrivateComponent'
 import LoginForm from './components/LoginForm'
 
-
 function App() {
   return (
     <>
-        {/* <LoginForm/> */}
       <BrowserRouter>
         <Nav></Nav>
+        
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/fetch" element={<Fetch />}></Route>
