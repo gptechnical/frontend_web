@@ -1,9 +1,9 @@
-import React from 'react'
-import Work from './Work'
-import Counter from './Counter'
-import Service from './Service'
-import Contact from './Contact'
+import React from 'react';
+import Work from './Work';
+import Service from './Service';
+import Contact from './Contact';
 import { TypeAnimation } from 'react-type-animation';
+import Counts from './Counts';
 
 function Home() {
   return (
@@ -84,7 +84,8 @@ function Home() {
       </div>
 
       <Work/>
-      <Counter/>
+      {/* <Counter/> */}
+      <Counts/>
       <Service/>
       <section className='py-5 bg-dark text-center text-white'>
         <h1>I am available for freelancing</h1>

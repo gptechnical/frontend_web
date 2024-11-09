@@ -23,27 +23,28 @@ const Counters = ({ initialValue, targetValue, autoPlayInterval, symbol }) => {
 const Counts = () => {
 return (
         <>
-            <section id="counts" className="counts section-bg">
+            <section id="counts" className="counts section-bg" style={{ backgroundColor: "#764BA2", padding: "50px 0px"}}>
                 <div className="container">
-                    <div className="row counters">
+                    <div className="row">
                         <div className="col-lg-3 col-6 text-center">
-                          <span className='count_num'><Counters initialValue={1} targetValue={300} autoPlayInterval={10} symbol="K+" /></span>        
-                          <p className='para_count'>Happy client</p>
+                          <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}>
+                            <Counters initialValue={1} targetValue={30} autoPlayInterval={70} symbol="k" /></span>        
+                          <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Happy client</p>
                         </div>
 
                         <div className="col-lg-3 col-6 text-center">
-                        <span className='count_num'><Counters initialValue={1} targetValue={64} autoPlayInterval={80} symbol="+" /></span>
-                          <p className='para_count'>Courses</p>
+                        <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}><Counters initialValue={1} targetValue={64} autoPlayInterval={80} symbol="+" /></span>
+                          <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Courses</p>
                         </div>
 
                         <div className="col-lg-3 col-6 text-center">
-                        <span className='count_num'><Counters initialValue={1} targetValue={42} autoPlayInterval={120} symbol="+" /></span>
-                          <p className='para_count'>Events</p>
+                        <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}><Counters initialValue={1} targetValue={42} autoPlayInterval={120} symbol="+" /></span>
+                          <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Events</p>
                         </div>
 
                         <div className="col-lg-3 col-6 text-center">
-                        <span className='count_num'><Counters initialValue={1} targetValue={15} autoPlayInterval={220} symbol="+" /></span>
-                          <p className='para_count'>Trainers</p>
+                        <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}><Counters initialValue={1} targetValue={15} autoPlayInterval={220} symbol="+" /></span>
+                          <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Trainers</p>
                         </div >
 
                     </div>
