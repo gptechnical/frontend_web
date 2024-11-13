@@ -27,23 +27,23 @@ return (
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-6 text-center">
-                          <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}>
+                          <span style={{color: "#ffa700", fontSize: "40px", fontWeight: "700"}}>
                             <Counters initialValue={1} targetValue={30} autoPlayInterval={70} symbol="k" /></span>        
                           <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Happy client</p>
                         </div>
 
                         <div className="col-lg-3 col-6 text-center">
-                        <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}><Counters initialValue={1} targetValue={64} autoPlayInterval={80} symbol="+" /></span>
+                        <span style={{color: "#ffa700", fontSize: "40px", fontWeight: "700"}}><Counters initialValue={1} targetValue={64} autoPlayInterval={80} symbol="+" /></span>
                           <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Courses</p>
                         </div>
 
                         <div className="col-lg-3 col-6 text-center">
-                        <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}><Counters initialValue={1} targetValue={42} autoPlayInterval={120} symbol="+" /></span>
+                        <span style={{color: "#ffa700", fontSize: "40px", fontWeight: "700"}}><Counters initialValue={1} targetValue={42} autoPlayInterval={120} symbol="+" /></span>
                           <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Events</p>
                         </div>
 
                         <div className="col-lg-3 col-6 text-center">
-                        <span style={{color: "#ffa700", fontSize: "30px", fontWeight: "700"}}><Counters initialValue={1} targetValue={15} autoPlayInterval={220} symbol="+" /></span>
+                        <span style={{color: "#ffa700", fontSize: "40px", fontWeight: "700"}}><Counters initialValue={1} targetValue={15} autoPlayInterval={220} symbol="+" /></span>
                           <p style={{ color: "#ffffff", fontSize: "22px", fontWeight: "600" }}>Trainers</p>
                         </div >
 

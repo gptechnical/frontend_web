@@ -110,3 +110,8 @@ h5 {
   font-weight: 500;
 }
 
+.navbar-light .navbar-toggler {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+

@@ -86,6 +86,7 @@ function Home() {
       <Work/>
       {/* <Counter/> */}
       <Counts/>
+    
       <Service/>
       <section className='py-5 bg-dark text-center text-white'>
         <h1>I am available for freelancing</h1>
