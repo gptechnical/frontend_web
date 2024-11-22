@@ -21,11 +21,9 @@ function Footer() {
       <li><Link to="#"><i className="bi bi-twitter-x text-white fs-3"></i></Link></li>
     </ul>
     <hr className="border border-white border-1 opacity-90"/>
-    <div className="copy_text">Copyright ©2024 All rights reserved | This template is made with 
-      <i className="bi bi-heart"></i> by 
-      <span style={{color: "orange", cursor: "pointer"}}>Gourav Prajapati.</span> </div>
-
-
+    <div className="copy_text">Copyright ©2024 All rights reserved | This template is made with  
+       <i className="bi bi-heart"></i> by 
+      <span style={{color: "orange", cursor: "pointer"}}> Gourav Prajapati.</span> </div>
         <footer className=" text-center text-white mt-3">CopyRight &copy; 2022 | All Rights Reserved.</footer>
       </section>
     </>

@@ -30,7 +30,7 @@ function Fetch() {
   }
   return (
     <>
-      <div className='container my-2'>
+      <div className='container my-2' style={{paddingTop: "100px"}}>
         <div className='row'>
           <div className='col-sm-10 col-md-10 mx-auto'>
             <table className='table'>

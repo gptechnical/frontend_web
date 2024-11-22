@@ -4,7 +4,7 @@ import React from 'react'
 function Service() {
   return (
     <>
-      <div className='container'>
+      <div className='container' style={{paddingTop: "50px"}}>
         <div className='row'>
           <div className='col-sm-12 col-md-12 col-lg-12'>
             <h1 className='fw-bold mt-5'>Service Offers</h1><hr width="25%" size="6" 
@@ -18,7 +18,7 @@ function Service() {
         <div className='row'>
           <div className='col-sm-4 col-md-4 col-lg-4'>
             <div className="card my-3 text-center" 
-            style={{ width: "22rem", backgroundColor: "#764ba2" }}>
+            style={{ backgroundColor: "#764ba2" }}>
               <div className='text-center' style={{ marginTop: "20px" }}>
               <img src="Images/icons/icon1.png" alt="icon" 
               style={{ borderRadius: "50%", 
@@ -33,7 +33,7 @@ function Service() {
             </div>
           </div>
           <div className='col-sm-4 col-md-4 col-lg-4'>
-            <div className="card my-3 text-center" style={{ width: "22rem", backgroundColor: "#764ba2" }}>
+            <div className="card my-3 text-center" style={{ backgroundColor: "#764ba2" }}>
             <div className='text-center' style={{ marginTop: "20px" }}>
               <img src="Images/icons/icon2.png" alt="icon" 
               style={{ borderRadius: "50%", 
@@ -47,7 +47,7 @@ function Service() {
             </div>
           </div>
           <div className='col-sm-4 col-md-4 col-lg-4'>
-            <div className="card my-3 text-center" style={{ width: "22rem", backgroundColor: "#764ba2" }}>
+            <div className="card my-3 text-center" style={{ backgroundColor: "#764ba2" }}>
             <div className='text-center' style={{ marginTop: "20px" }}>
               <img src="Images/icons/icon3.png" alt="icon" 
               style={{ borderRadius: "50%", 
@@ -61,7 +61,7 @@ function Service() {
             </div>
           </div>
           <div className='col-sm-4 col-md-4 col-lg-4'>
-            <div className="card my-3 text-center" style={{ width: "22rem", backgroundColor: "#764ba2" }}>
+            <div className="card my-3 text-center" style={{ backgroundColor: "#764ba2" }}>
             <div className='text-center' style={{ marginTop: "20px" }}>
               <img src="Images/icons/icon4.png" alt="icon" 
               style={{ borderRadius: "50%", 
@@ -75,7 +75,7 @@ function Service() {
             </div>
           </div>
           <div className='col-sm-4 col-md-4 col-lg-4'>
-            <div className="card my-3 text-center" style={{ width: "22rem", backgroundColor: "#764ba2" }}>
+            <div className="card my-3 text-center" style={{ backgroundColor: "#764ba2" }}>
             <div className='text-center' style={{ marginTop: "20px" }}>
               <img src="Images/icons/icon5.png" alt="icon" 
               style={{ borderRadius: "50%", 
@@ -89,7 +89,7 @@ function Service() {
             </div>
           </div>
           <div className='col-sm-4 col-md-4 col-lg-4'>
-            <div className="card my-3 text-center" style={{ width: "22rem", backgroundColor: "#764ba2" }}>
+            <div className="card my-3 text-center" style={{ backgroundColor: "#764ba2" }}>
             <div className='text-center' style={{ marginTop: "20px" }}>
               <img src="Images/icons/icon6.png" alt="icon" 
               style={{ borderRadius: "50%", 

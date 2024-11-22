@@ -114,4 +114,15 @@ h5 {
   color: rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
 }
-
+#my_text {
+    border-radius: 50px;
+    background-color: #ffffff;
+    outline: none;
+    /* border: none; */
+    border: 1px solid #0000004f;
+    box-shadow: none;
+    color: #000000;
+}
+#my_text:focus {
+  border: 1px solid #0000004f;
+}

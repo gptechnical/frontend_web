@@ -43,7 +43,7 @@ function Register() {
     }
     return (
         <>
-            <div className='container' style={{paddingTop: "15px", paddingBottom: "15px"}}>
+            <div className='container' style={{paddingTop: "80px", paddingBottom: "15px"}}>
                 <div className='row'>
                 <div className='col-md-8 mx-auto'>
                     <form method='post'

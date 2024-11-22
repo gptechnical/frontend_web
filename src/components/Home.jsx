@@ -8,6 +8,7 @@ import Counts from './Counts';
 function Home() {
   return (
     <>
+    <div style={{paddingTop: "100px"}}>
       <div className='container mt-5'>
         <div className='row'>
           <div className='col-sm-6 col-md-6 col-lg-6 mt-5'>
@@ -89,12 +90,13 @@ function Home() {
     
       <Service/>
       <section className='py-5 bg-dark text-center text-white'>
-        <h1>I am available for freelancing</h1>
-        <p className='text-white'>Lorem ipsum dolor sit, amet consectetur 
+        <h1>I am available for frontend developer.</h1>
+        <p className='text-white fw-semibold fs-5'>Lorem ipsum dolor sit, amet consectetur 
           adipisicing elit. Eum voluptates similique nulla vitae natus</p>
         <button className='btn py-2 px-4 text-white'>HIRE ME</button>
       </section>
      <Contact/>
+     </div>
     </>
   )
 }

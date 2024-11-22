@@ -40,7 +40,7 @@ function Login() {
     }
     return (
         <>
-        <section className='container' style={{paddingTop: "20px", paddingBottom: "20px"}}>
+        <section className='container' style={{paddingTop: "50px", paddingBottom: "20px"}}>
             <div className='row'>
                 <div className='col-md-6'>
                     <div className='text-center login_img'>
