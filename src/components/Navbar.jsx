@@ -18,7 +18,7 @@ const Main = styled.div`
 `;
 
 const MobileViewAppBar = styled.div`
-  background-color: #fff;
+  background-color: #212529;
   width: 100%;
   /* border-radius: 0px 50px 50px 0px; */
   padding: 0px 20px;
@@ -258,6 +258,7 @@ const Navbar = ({
           onClick={() => {
             setShowNavigation(!showNavigation);
           }}
+          style={{color: "#ffffff"}}
         />
       </MobileViewAppBar>
       {showNavigation && (
