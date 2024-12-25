@@ -126,3 +126,14 @@ h5 {
 #my_text:focus {
   border: 1px solid #0000004f;
 }
+.btn_contact {
+    background-color: #ffc400;
+    padding: 8px 20px;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    margin-top: 15px;
+    box-shadow: -2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.41);
+    border: 1px solid #ffffff4f;
+ 
+}

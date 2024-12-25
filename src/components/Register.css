@@ -17,7 +17,6 @@
     margin-top: 15px;
     box-shadow: -2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.41);
     border: 1px solid #ffffff4f;
-    border-radius: 5px;
 }
 input[type="text"]::placeholder {
     color: #000000;

@@ -9,7 +9,7 @@ function Contact() {
         style={{color: "#764ba2", opacity: "1"}}/>
         <div className='row'>
           <div className='col-sm-6 col-md-6 col-lg-6'>
-            <div className="contact-form bg-white" style={{ padding: "30px" }}>
+            <div className="contact-form" style={{ padding: "20px", backgroundColor: "#764BA2", marginBottom: "20px" }}>
               <div id="success"></div>
               <form name="sentMessage" id="contactForm" noValidate="novalidate">
             
@@ -30,13 +30,13 @@ function Contact() {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div className="control-group">
-                  <textarea className="form-control py-3 px-4" rows="5" id="my_text" placeholder="Message"
+                  <textarea className="form-control py-3 px-4" rows="3" id="my_text" placeholder="Message"
                     required="required"
                     data-validation-required-message="Please enter your message"></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
                 <div className="text-center">
-                  <button className="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">SEND MESSAGE</button>
+                  <button className='btn_contact' type="submit" id="sendMessageButton">SEND MESSAGE</button>
                 </div>
               </form>
             </div>

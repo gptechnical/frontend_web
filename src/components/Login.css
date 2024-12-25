@@ -6,7 +6,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    border-radius: 10px;
     box-shadow: 2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.41);
 }
 
@@ -27,7 +26,6 @@ input[type="password"]::placeholder {
     margin-top: 15px;
     box-shadow: -2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.41);
     border: 1px solid #ffffff4f;
-    border-radius: 5px;
 }
 
 #myText {
